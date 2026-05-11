@@ -61,7 +61,7 @@ const AddContact = () => {
 
     try {
       const res = await apiConnectionInstance.post("/contacts", formData);
-      navigate('/'); 
+      //navigate('/'); 
     } catch (error) {
       if(error.response?.status === 422) {
         setErrors(error.response.data.errors || {})
